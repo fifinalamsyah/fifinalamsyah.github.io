@@ -1,0 +1,95 @@
+/* RESET DEFAULT */
+html {
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: hsl(var(--primary-lighter));
+}
+::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--primary));
+  border-radius: 20px;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-normal);
+  background-color: var(--color-body);
+  color: var(--color-text);
+  position: relative;
+}
+
+body.dark {
+  --l-1: 97%;
+  --l-2: 85%;
+  --l-3: 70%;
+  --l-4: 54%;
+  --l-5: 35%;
+  --l-6: 12%;
+  --l-7: 3%;
+  /* HSL color mode */
+  --primary: var(--hue-main) 96% var(--l-4);
+  --secondary: var(--hue-seco ndary) 96% var(--l-4);
+  --accent: var(--hue-accent) 96% calc(var(--l-4));
+
+  --primary-darker: var(--hue-main) 96% var(--l-2);
+  --primary-dark: var(--hue-main) 96% var(--l-3);
+  --primary-light: var(--hue-main) 96% var(--l-5);
+  --primary-lighter: var(--hue-main) 96% var(--l-6);
+
+  --color-body: hsl(var(--hue-main) 20% var(--l-7));
+
+  --color-title: hsl(var(--hue-main) 15% var(--l-1));
+  --color-text: hsl(var(--hue-main) 15% var(--l-2));
+  --color-text-light: hsl(var(--hue-main) 15% var(--l-5));
+  --color-text-lighter: hsl(var(--hue-main) 15% var(--l-6));
+
+  --color-white: #fff;
+  --color-container: hsl(var(--hue-main) 15% var(--l-7));
+
+  --gradient: linear-gradient(
+    90deg,
+    hsl(var(--hue-accent) 96% calc(var(--l-5))) -12%,
+    hsl(var(--hue-accent) 96% calc(var(--l-4))) 109%
+  );
+  --gradient-reverse: linear-gradient(
+    90deg,
+    hsl(var(--hue-accent) 96% calc(var(--l-4))) -12%,
+    hsl(var(--hue-accent) 96% calc(var(--l-5))) 109%
+  );
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  font-weight: 800;
+}
+h2 {
+  font-size: var(--fs-h2);
+  font-weight: 600;
+}
+h3 {
+  font-size: var(--fs-h3);
+  font-weight: 500;
+}

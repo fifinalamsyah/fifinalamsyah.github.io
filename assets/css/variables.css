@@ -1,0 +1,93 @@
+/* |:: BASE ::| */
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap");
+
+/* VARIABLES CSS */
+:root {
+  /* Change favorite color -
+      Red 0
+      Orange 25
+      Yellow 60
+      Green 100
+      Green 142
+      Blue 210
+      Blue 250
+      Purple 280
+      Pink 300
+      Pink 320*/
+
+  --hue-main: 170;
+  /* secondary hue main - 180 */
+  --hue-secondary: calc(var(--hue-main) - 180);
+  /* ac
+  cen hue main - 40 */
+  --hue-accent: calc(var(--hue-main) - 40);
+
+  --l-1: 5%;
+  --l-2: 15%;
+  --l-3: 30%;
+  --l-4: 54%;
+  --l-5: 70%;
+  --l-6: 85%;
+  --l-7: 97%;
+
+  /* HSL color mode */
+  --primary: var(--hue-main) 96% var(--l-4);
+  --secondary: var(--hue-secondary) 96% var(--l-4);
+  --accent: var(--hue-accent) 96% var(--l-4);
+
+  --primary-darker: var(--hue-main) 96% var(--l-2);
+  --primary-dark: var(--hue-main) 96% var(--l-3);
+  --primary-light: var(--hue-main) 96% var(--l-5);
+  --primary-lighter: var(--hue-main) 96% var(--l-6);
+
+  --color-body: hsl(var(--hue-main) 60% var(--l-7));
+
+  --color-title: hsl(var(--hue-main) 15% var(--l-1));
+  --color-text: hsl(var(--hue-main) 15% var(--l-3));
+  --color-text-light: hsl(var(--hue-main) 15% var(--l-5));
+  --color-text-lighter: hsl(var(--hue-main) 15% var(--l-6));
+
+  --color-white: #fff;
+  --color-container: hsl(var(--hue-main) 15% var(--l-7));
+
+  --gradient: linear-gradient(
+    90deg,
+    hsl(var(--hue-accent) 96% calc(var(--l-5))) -12%,
+    hsl(var(--hue-accent) 96% calc(var(--l-4))) 109%
+  );
+  --gradient-primary: linear-gradient(
+    90deg,
+    hsl(var(--hue-main) 96% calc(var(--l-7))),
+    hsl(var(--hue-main) 96% calc(var(--l-6)))
+  );
+
+  /*========== Font ==========*/
+  --font-body: "Poppins", sans-serif;
+
+  --fs-h1: 1.75rem;
+  --fs-h2: 1.5rem;
+  --fs-h3: 1.25rem;
+  --fs-normal: 0.938rem;
+  --fs-small: 0.813rem;
+  --fs-smaller: 0.75rem;
+  --fs-tiny: 0.625rem;
+
+  /*========== Margin ==========*/
+  --m-1: 0.25rem;
+  --m-2: 0.5rem;
+  --m-3: 1rem;
+  --m-4: 1.25rem;
+  --m-5: 1.5rem;
+  --m-6: 2rem;
+
+  /*========== Padding ==========*/
+  --p-1: 1em;
+  --p-2: 1.25em;
+  --p-3: 1.5em;
+  --p-4: 2em;
+  --p-5: 2.5em;
+  --p-6: 3em;
+
+  --shadow: 0 3px 10px hsl(var(--primary-lighter));
+}
