@@ -413,8 +413,11 @@ header {
   bottom: 0;
   background-color: var(--color-body);
   z-index: 99;
-  box-shadow: var(--shadow);
   height: 4rem;
+  transition: 0.5s;
+}
+.sticky {
+  box-shadow: var(--shadow);
 }
 nav {
   align-items: center;
@@ -788,7 +791,7 @@ nav .brand {
   text-transform: capitalize;
   box-shadow: var(--shadow);
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 10px;
   transition: 0.5s;
 }
 
@@ -873,8 +876,8 @@ nav .brand {
   /* color: #a0616a; */
 }
 .service-img {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 }
 .service-img svg {
   width: 100%;
@@ -1194,6 +1197,10 @@ footer a:hover {
     transform: initial;
     width: initial;
   }
+  nav.opened .menu {
+    height: initial;
+    margin-top: initial;
+  }
   nav .toggle {
     display: none;
   }
@@ -1248,6 +1255,10 @@ footer a:hover {
     z-index: 2;
   }
 
+  .service-img {
+    width: 150px;
+    height: 150px;
+  }
   .contact-item {
     padding-left: var(--m-5);
   }

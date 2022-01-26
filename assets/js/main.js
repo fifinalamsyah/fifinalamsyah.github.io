@@ -23,6 +23,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // Nav Menu
     const menu = document.getElementById("menu");
+    const header = document.querySelector("header");
     const nav = document.querySelector("nav");
     const toggle = document.getElementById("toggle");
     const section = document.querySelectorAll("section[id]")
@@ -42,6 +43,11 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     window.addEventListener("scroll", () => {
+        if (scrollY > 50) {
+            header.classList.add("sticky")
+        } else {
+            header.classList.remove("sticky")
+        }
         section.forEach((current) => {
             const sectionId = current.getAttribute("id")
 
